@@ -2,7 +2,7 @@
 
 **I'm a builder: I get curious, go deep, and build it with AI.**
 
-AI systems that run a real business, a public tool that helps workers know their rights, a roguelike about American paperwork: different domains, and I go deep into each one. I'm not afraid of the technical or the specialized; I'll learn a field until I can build in it. I'm fluent in the modern AI stack, I've worked across operations, sales, and venture (I scout startups too), and I'm happiest with sharp people on hard, interesting problems. I care more about the problem than the title.
+I build the AI that runs a real business, and I go deep into whatever a problem needs. I've worked across operations, sales, and venture.
 
 Most of what's here I built and run solo, on personal subscriptions, with no budget.
 
