@@ -2,25 +2,29 @@
 
 **I'm a builder: I get curious, go deep, and build it with AI.**
 
-AI systems that run a real business, a public tool that helps workers know their rights, a roguelike about American paperwork: different domains, and I go deep into each one. I'm not afraid of the technical or the specialized; I'll learn a field until I can build in it. I'm fluent in the modern AI stack, I've worked across operations, sales, and venture (I scout startups too), and I'm happiest with sharp people on hard, interesting problems. I care more about the problem than the title.
+I build the AI that runs a real business, and I go deep into whatever a problem needs. I've worked across operations, sales, and venture.
 
 Most of what's here I built and run solo, on personal subscriptions, with no budget.
 
 ## AI systems I built, use every day, and keep improving
 
-**WeChat client brain.** The closest thing I have to an operations team. Every message a client sends on WeChat flows into one connected system: a live CRM and kanban, deal-stage tracking, and the customer-service answers I send back, all kept in sync without me copying a thing by hand. WeChat has no API, so it reads through a macOS accessibility layer and Claude does the synthesis.
+I run my client operation on these. Each one does a job I'd otherwise have to hire for, which is how I keep a full client book moving on my own.
 
-**One-person outbound team.** A full outbound motion I run solo: it researches each company with AI to find the angle, writes the email, schedules the send across the week, and reads the replies, all from a single dashboard over a SQLite state machine.
+**Self-updating CRM.** My client conversations live on WeChat, which gives you no API, so a background daemon and a Swift accessibility layer reach the data directly and Claude turns each thread into a CRM update, running 24/7 as a self-healing service I review before it commits. The board I built on top brings my WeChat and email pipelines into one view, surfaces what needs action this week, and auto-flags leads going cold so nothing slips.
 
-**RedNote (小红书) growth engine.** The content engine that built my audience from zero on a platform that actively fights automation. It finds what my audience cares about by scanning keywords and high-signal "magnet" posts and scoring intent with Claude, then drafts posts in my own voice, covers included. I built it deliberately read-only and half-auto, behind a safety harness, so it brings opportunities to me and never risks the account.
+**Email outreach engine.** A full LLM email pipeline that researches each company, picks the angle, drafts the email and sends it, then sequences the follow-ups and sends them on a cadence. It tracks opens and replies, and a dashboard turns that into a read on what's landing, so I'm always tightening the copy and the flow. The reliability sits in the engineering around the model: a SQLite state machine, dry-run and validation gates, and a hard cap on daily spend.
 
-**Mei, a compliance assistant I can put in front of a client.** It answers US-employment questions only from sourced, current rules, refuses to guess when the answer isn't in its sources, and escalates the calls that need a human. Every change ships behind an eval suite, so a model update can't quietly break a client answer.
+**RedNote (Xiaohongshu) lead radar.** An LLM lead-finder for a platform that bans bots: it scores posts and comments for buyer intent and surfaces the strongest to me. It stays strictly read-only behind a kill switch and an audit log, so it can never post or risk the account. And it closes the loop: the same intel feeds a writing agent that turns what's trending into posts in my voice, covers and all.
+
+**Mei, a compliance assistant I can put in front of a client.** An LLM assistant for U.S. employment-law questions, designed around trust: it answers only from a sourced knowledge base and current .gov sources, cites every claim, refuses when it can't ground an answer, and ships only after passing a suite of real-question evals.
+
+**The judgment underneath.** The calls I'm most deliberate about are where AI can act on its own vs. where I stay in the loop, what guardrail each one needs, and what data ever leaves my machine. It all runs on one source of truth, so a fresh chat picks up a client's full context on the spot.
 
 ## Shipped and public
 
-**Employee Rights Tool** ([live](https://employee-rights-tool.diyaqu-contact.workers.dev/) · [code](https://github.com/diyaqu/employee-rights-tool)). Shipped and helping real people: a free, no-login web tool that walks a US worker through whether what's happening to them is illegal, what to save, and how to find a lawyer. The same compliance knowledge I sell, turned toward the other side of the table.
+**Employee Rights Tool** ([live](https://employee-rights-tool.diyaqu-contact.workers.dev/) · [code](https://github.com/diyaqu/employee-rights-tool)). A free, no-login web tool that helps a U.S. worker tell whether their situation is illegal, what to save, and how to find a lawyer. I built it after one of my posts on workers' rights took off and the comments made the need impossible to ignore, so I turned the compliance knowledge I sell to employers into something that helps people on the other side of the table. Free to use, and it grows the audience I write for.
 
-**Land of Opportunity** ([play](https://diyaqu.github.io/land-of-opportunity/) · [code](https://github.com/diyaqu/land-of-opportunity)). Everyone shows up believing America is the gold rush: best country in the world, open road, come build your dream. This is the game about the part nobody warns the newcomer about. It's a dark comedy of opening a small business as an immigrant, where the villain isn't the market, it's the paperwork. Your company doesn't die because profits were thin. It dies from a compliance rule you never knew existed, by certified mail, and you don't even find out how you got killed. You're just trying to survive year one, while a faceless "State" speaks only through letterheads and every joke sits on a real law. I designed the whole world: the gold-rush look, the cast, the dialogue, the language, the sound, and I taught myself new tools (ElevenLabs, AI art) to build it. Still half-built, and I want people to poke at it anyway.
+**Land of Opportunity** ([play](https://diyaqu.github.io/land-of-opportunity/) · [code](https://github.com/diyaqu/land-of-opportunity)). A dark-comedy game about how fast an American small business can die by paperwork. A half-built side project I made for fun; every rule in it is real.
 
 ## What I work with
 
